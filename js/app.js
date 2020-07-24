@@ -1,11 +1,12 @@
 var url         = window.location.href;
 var swurl       = '/LE-SHAT/sw.js';
 
-console.log('url: ', url);
+
 // llamada al SW
 if(navigator.serviceWorker){
     if (url.includes('localhost')) swurl = '/sw.js';
 
+    console.log("swurl: ", swurl);
     navigator.serviceWorker.register(swurl);
 }
 
