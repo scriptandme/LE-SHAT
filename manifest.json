@@ -1,8 +1,8 @@
 {
-    "short_name": "twittor",
-    "name": "Twittor for superheroes",
+    "short_name": "LE-SHAT",
+    "name": "LE-SHAT for superheroes",
     "description": "App de prueba para la creacion de PWA",
-    "start_url": "/?source=pwa",
+    "start_url": "/",
     "background_color": "#3498DB",
     "display": "standalone",
     "orientation": "portrait",
