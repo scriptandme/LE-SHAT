@@ -1,5 +1,5 @@
 var url         = window.location.href;
-var swurl       = 'LE-SHAT/sw.js';
+var swurl       = '/LE-SHAT/sw.js';
 
 console.log('url: ', url);
 // llamada al SW
