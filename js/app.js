@@ -1,6 +1,12 @@
+var url         = window.location.href;
+var swurl       = 'LE-SHAT/sw.js';
+
+console.log('url: ', url);
 // llamada al SW
 if(navigator.serviceWorker){
-    navigator.serviceWorker.register('/sw.js');
+    if (url.includes('localhost')) swurl = '/sw.js';
+
+    navigator.serviceWorker.register(swurl);
 }
 
 // Referencias de jQuery

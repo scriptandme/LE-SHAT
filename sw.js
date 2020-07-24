@@ -1,21 +1,21 @@
-importScripts('/js/sw-utils.js');
+importScripts('js/sw-utils.js');
 
-const STATIC_CACHE      = 'static_v2';
+const STATIC_CACHE      = 'static_v3';
 const DINAMIC_CACHE     = 'dinamic_v1';
 const INMUTABLE_CACHE   = 'inmutable_v1';
 
 const APP_SHELL = [
     '/',
-    '/index.html',
-    '/img/avatars/hulk.jpg',
-    '/img/avatars/ironman.jpg',
-    '/img/avatars/spiderman.jpg',
-    '/img/avatars/thor.jpg',
-    '/img/avatars/wolverine.jpg',
-    '/img/favicon.ico',
-    '/css/style.css',
-    '/js/app.js',
-    '/js/sw-utils.js'
+    'index.html',
+    'img/avatars/hulk.jpg',
+    'img/avatars/ironman.jpg',
+    'img/avatars/spiderman.jpg',
+    'img/avatars/thor.jpg',
+    'img/avatars/wolverine.jpg',
+    'img/favicon.ico',
+    'css/style.css',
+    'js/app.js',
+    'js/sw-utils.js'
 ];
 
 
