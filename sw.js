@@ -1,11 +1,11 @@
 importScripts('js/sw-utils.js');
 
-const STATIC_CACHE      = 'static_v4';
+const STATIC_CACHE      = 'static_v1';
 const DINAMIC_CACHE     = 'dinamic_v1';
 const INMUTABLE_CACHE   = 'inmutable_v1';
 
 const APP_SHELL = [
-    /*'/',*/
+    '/',
     'index.html',
     'img/avatars/hulk.jpg',
     'img/avatars/ironman.jpg',
@@ -60,8 +60,8 @@ self.addEventListener('fetch', e => {
             return res;
         } else{
                       
-            return fetch(e.request).then(res => {
-                return actualizaCachesDinamicos(DINAMIC_CACHE, e.request, res);
+            return fetch(e.request).then(newres => {
+                return actualizaCachesDinamicos(DINAMIC_CACHE, e.request, newres);
             })
         }
     })
