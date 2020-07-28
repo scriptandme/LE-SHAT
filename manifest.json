@@ -2,7 +2,7 @@
     "short_name": "LE-SHAT",
     "name": "LE-SHAT for superheroes",
     "description": "App de prueba para la creacion de PWA",
-    "start_url": "/",
+    "start_url": "index.html",
     "background_color": "#3498DB",
     "display": "standalone",
     "orientation": "portrait",

@@ -5,8 +5,6 @@ var swurl       = '/LE-SHAT/sw.js';
 // llamada al SW
 if(navigator.serviceWorker){
     if (url.includes('localhost')) swurl = '/sw.js';
-
-    console.log("swurl: ", swurl);
     navigator.serviceWorker.register(swurl);
 }
 
