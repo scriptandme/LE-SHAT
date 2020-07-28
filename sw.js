@@ -5,7 +5,7 @@ const DINAMIC_CACHE     = 'dinamic_v1';
 const INMUTABLE_CACHE   = 'inmutable_v1';
 
 const APP_SHELL = [
-    /*'/',*/
+    '/',
     'index.html',
     'img/avatars/hulk.jpg',
     'img/avatars/ironman.jpg',
@@ -58,8 +58,8 @@ self.addEventListener('fetch', e => {
     const respuesta = caches.match(e.request).then(res => {
         if(res) {
             return res;
-        }else{
-            // guardamos el recurso en el cache dinamico. Por ejemplo en las llamadas de fuentes, solo hacemos una referencia, internamente google hace mas peticiones y estas como no estan en nuestro cache fallan.
+        } else{
+                      
             return fetch(e.request).then(res => {
                 return actualizaCachesDinamicos(DINAMIC_CACHE, e.request, res);
             })
